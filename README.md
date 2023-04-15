@@ -1,0 +1,4 @@
+# neovim-setup
+
+## Prerequisite
+* ripgrep
