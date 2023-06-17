@@ -1,3 +1,3 @@
 require("user.remaps")
-require("user.packer")
+require("user.pluginManager")
 require("user.set")

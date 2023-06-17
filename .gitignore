@@ -40,4 +40,7 @@ luac.out
 *.hex
 
 
+# Plugin Management related stuff
 plugin/packer_compiled.lua
+lazy-lock.json
+
