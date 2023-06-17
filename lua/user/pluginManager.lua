@@ -85,4 +85,6 @@ return require('lazy').setup({
 end,
   },
 
+  { 'lewis6991/gitsigns.nvim' },
+
 })
