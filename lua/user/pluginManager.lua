@@ -1,3 +1,4 @@
+-- Cloning and setting up lazy.nvim if not done before
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
@@ -11,8 +12,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Setting up the editor with the plugins
 return require('lazy').setup({
-
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.1',
@@ -31,7 +32,7 @@ return require('lazy').setup({
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 
     { 'nvim-treesitter/playground' },
-    {'nvim-treesitter/nvim-treesitter-context'},
+    { 'nvim-treesitter/nvim-treesitter-context' },
 
     { 'mbbill/undotree' },
 
@@ -62,12 +63,17 @@ return require('lazy').setup({
 
 {
     "nvim-neorg/neorg",
+    build = ":Neorg sync-parsers",
+    cmd = "Neorg",
+    ft = "norg",
+    lazy = true,
+    dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-        require('neorg').setup {
+        require("neorg").setup {
             load = {
-                ["core.defaults"] = {},  -- Loads default behaviour
+                ["core.defaults"] = {}, -- Loads default behaviour
                 ["core.concealer"] = {}, -- Adds pretty icons to your documents
-                ["core.dirman"] = {      -- Manages Neorg workspaces
+                ["core.dirman"] = { -- Manages Neorg workspaces
                 config = {
                     workspaces = {
                         notes = "~/notes",
@@ -77,8 +83,6 @@ return require('lazy').setup({
         },
     }
 end,
-build = ":Neorg sync-parsers",
-dependencies = "nvim-lua/plenary.nvim",
-}
+  },
 
 })
