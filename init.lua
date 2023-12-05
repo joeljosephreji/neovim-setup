@@ -1,3 +1,3 @@
-require("user.remaps")
-require("user.pluginManager")
-require("user.set")
+require("remaps")
+require("pluginManager")
+require("options")

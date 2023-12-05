@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 return require('lazy').setup({
     {
         'nvim-telescope/telescope.nvim',
-        tag = '0.1.1',
+        tag = '0.1.4',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
 
@@ -25,7 +25,7 @@ return require('lazy').setup({
         lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd('colorscheme tokyonight')
+            vim.cmd.colorscheme('tokyonight')
         end
     },
 
