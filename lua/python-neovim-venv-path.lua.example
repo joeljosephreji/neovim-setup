@@ -1,0 +1,4 @@
+-- refer to the python section in https://neovim.io/doc/user/provider.html
+-- copy paste this file in the same directory and remove .example in the filename
+-- add the path to the virtual environment in the empty string below
+return ''

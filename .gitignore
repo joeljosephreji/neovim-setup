@@ -44,3 +44,7 @@ luac.out
 plugin/packer_compiled.lua
 lazy-lock.json
 
+# python virtual environment provider for neovim
+python-virtual-env-neovim/
+lua/python-neovim-venv-path.lua
+
