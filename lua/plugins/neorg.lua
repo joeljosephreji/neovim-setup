@@ -1,5 +1,7 @@
 return {
     "nvim-neorg/neorg",
+    lazy = false,
+    version = "*",
     config = function ()
         require("neorg").setup {
             load = {
@@ -10,10 +12,14 @@ return {
                         workspaces = {
                             notes = "~/notes",
                         },
+                        default_workspaces = "notes",
                     },
                 },
             }
         }
-    end
+
+        vim.wo.foldlevel = 99
+        vim.wo.conceallevel = 2
+    end,
 }
 
