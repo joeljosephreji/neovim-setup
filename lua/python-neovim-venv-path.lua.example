@@ -1,4 +1,12 @@
--- refer to the python section in https://neovim.io/doc/user/provider.html
--- copy paste this file in the same directory and remove .example in the filename
--- add the path to the virtual environment in the empty string below
-return ''
+--[[
+refer to the python section in https://neovim.io/doc/user/provider.html
+copy paste this file in the same directory and remove .example in the filename
+add the path to the virtual environment in the empty string below
+
+mkdir $HOME/.config/nvim/python-virtual-env-neovim/
+cd $HOME/.config/nvim/python-virtual-env-neovim/
+PIPENV_VENV_IN_PROJECT=1 pipenv shell
+pipenv install pynvim
+]]
+return '$HOME/.config/nvim/python-virtual-env-neovim/.venv/python'
+
