@@ -8,5 +8,5 @@ cd $HOME/.config/nvim/python-virtual-env-neovim/
 PIPENV_VENV_IN_PROJECT=1 pipenv shell
 pipenv install pynvim
 ]]
-return '$HOME/.config/nvim/python-virtual-env-neovim/.venv/python'
+return '$HOME/.config/nvim/python-virtual-env-neovim/.venv/bin/python'
 
