@@ -39,6 +39,9 @@ return { -- Collection of various small independent plugins/modules
 
         -- for having the closing pair of brackets, etc
         require('mini.pairs').setup()
+
+        -- for knowing the current indentation
+        require('mini.indentscope').setup()
     end,
 }
 
