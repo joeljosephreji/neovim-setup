@@ -12,6 +12,7 @@ return {
             end,
         },
         { 'nvim-telescope/telescope-ui-select.nvim' },
+        { 'Marskey/telescope-sg', }
     },
     config = function()
         require('telescope').setup {
@@ -19,12 +20,21 @@ return {
                 ['ui-select'] = {
                     require('telescope.themes').get_dropdown(),
                 },
+                ast_grep = {
+                    command = {
+                        "ast-grep",
+                        "--json=stream",
+                    },
+                    grep_open_files = false,
+                    lang = nil, -- string value, specify language for ast-grep `nil` for default
+                },
             },
         }
 
         -- Enable Telescope extensions if they are installed
         pcall(require('telescope').load_extension, 'fzf')
         pcall(require('telescope').load_extension, 'ui-select')
+        pcall(require('telescope').load_extension, 'telescope-sg')
 
         -- See `:help telescope.builtin`
         local builtin = require 'telescope.builtin'

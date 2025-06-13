@@ -5,4 +5,5 @@ Heavily inspired from kickstart.nvim: <https://github.com/nvim-lua/kickstart.nvi
 * ripgrep
 * fd
 * lazygit
+* ast-grep
 * nvim-treesitter-cli
