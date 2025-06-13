@@ -24,3 +24,5 @@ vim.keymap.set("n", "<leader>cd", ":cd %:p:h<CR>:pwd<CR>", { silent = true })
 
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
+vim.keymap.set('n', '<leader>tq', "<cmd>TodoQuickFix<CR>", { desc = 'Open [T]odo [Q]uickfix list' })
+
