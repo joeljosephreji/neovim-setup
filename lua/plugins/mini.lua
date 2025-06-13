@@ -26,6 +26,7 @@ return { -- Collection of various small independent plugins/modules
         end
 
         require('mini.icons').setup()   -- file icons
+        MiniIcons.mock_nvim_web_devicons()
 
         -- ... and there is more!
         --  Check out: https://github.com/echasnovski/mini.nvim
