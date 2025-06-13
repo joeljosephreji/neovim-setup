@@ -6,7 +6,7 @@ return {
     opts = {
         lazygit = { enabled = true },   -- for git stuff
         indent = { enabled = true },    -- for knowing the indent level
-        -- scratch = { enabled = true },   -- for having scratch buffers
+        -- scratch = { enabled = true },   -- TODO: for having scratch buffers
         bufdelete = { enabled = true }, -- for deleting buffers
         rename = { enabled = true },    -- for renaming files
     },
