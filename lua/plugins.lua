@@ -16,8 +16,6 @@ return {
 
     { 'nvim-treesitter/playground' },
 
-    { 'nvim-tree/nvim-web-devicons' },
-
     { 'NMAC427/guess-indent.nvim', },
 
 }
