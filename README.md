@@ -4,4 +4,5 @@ Heavily inspired from kickstart.nvim: <https://github.com/nvim-lua/kickstart.nvi
 ## Prerequisite
 * ripgrep
 * fd
+* lazygit
 * nvim-treesitter-cli
