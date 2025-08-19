@@ -94,10 +94,13 @@ return {
 			end,
 		})
 
-		-- new lsp configuration syntax
 		vim.lsp.enable({
 			"gopls",
 			"lua_ls",
+		})
+
+		vim.lsp.config("*", {
+			capabilities = require("blink.cmp").get_lsp_capabilities(),
 		})
 
 		-- Diagnostic Config
@@ -129,8 +132,5 @@ return {
 				end,
 			},
 		})
-
-		-- TODO: figure out what to do with capabilities
-		require("blink.cmp").get_lsp_capabilities()
 	end,
 }
