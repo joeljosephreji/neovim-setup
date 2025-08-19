@@ -1,25 +1,24 @@
 return {
-    "nvim-neorg/neorg",
-    lazy = false,
-    version = "*",
-    config = function ()
-        require("neorg").setup {
-            load = {
-                ["core.defaults"] = {}, -- Loads default behaviour
-                ["core.concealer"] = {}, -- Adds pretty icons to your documents
-                ["core.dirman"] = { -- Manages Neorg workspaces
-                    config = {
-                        workspaces = {
-                            notes = "~/notes",
-                        },
-                        default_workspaces = "notes",
-                    },
-                },
-            }
-        }
+	"nvim-neorg/neorg",
+	lazy = false,
+	version = "*",
+	config = function()
+		require("neorg").setup({
+			load = {
+				["core.defaults"] = {}, -- Loads default behaviour
+				["core.concealer"] = {}, -- Adds pretty icons to your documents
+				["core.dirman"] = { -- Manages Neorg workspaces
+					config = {
+						workspaces = {
+							notes = "~/notes",
+						},
+						default_workspaces = "notes",
+					},
+				},
+			},
+		})
 
-        vim.wo.foldlevel = 99
-        vim.wo.conceallevel = 2
-    end,
+		vim.wo.foldlevel = 99
+		vim.wo.conceallevel = 2
+	end,
 }
-

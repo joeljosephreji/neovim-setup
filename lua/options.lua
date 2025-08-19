@@ -22,9 +22,9 @@ vim.o.scrolloff = 10
 vim.o.termguicolors = true
 vim.o.colorcolumn = "120"
 
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 
-vim.o.signcolumn = 'yes'
+vim.o.signcolumn = "yes"
 
 -- Decrease update time
 vim.o.updatetime = 250
@@ -41,10 +41,10 @@ vim.o.splitbelow = true
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Preview substitutions live, as you type!
-vim.o.inccommand = 'split'
+vim.o.inccommand = "split"
 
 -- Show which line your cursor is on
 vim.o.cursorline = true
@@ -55,4 +55,3 @@ vim.o.confirm = true -- confirmation messages when not saving
 
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
-
