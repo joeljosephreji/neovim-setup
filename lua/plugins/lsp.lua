@@ -129,6 +129,7 @@ return {
 			},
 		})
 
+		-- TODO: figure out what to do with capabilities
 		require("blink.cmp").get_lsp_capabilities()
 	end,
 }
