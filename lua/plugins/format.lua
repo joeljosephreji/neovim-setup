@@ -33,6 +33,7 @@ return {
 			sh = { "shfmt" },
 			bash = { "shfmt" },
 			nix = { "nixfmt" },
+			cpp = { "clang-format" },
 			-- Conform can also run multiple formatters sequentially
 			-- python = { "isort", "black" },
 			--

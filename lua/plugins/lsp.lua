@@ -98,6 +98,7 @@ return {
 			"gopls",
 			"lua_ls",
 			"nixd",
+			"clangd",
 		})
 
 		vim.lsp.config("*", {
