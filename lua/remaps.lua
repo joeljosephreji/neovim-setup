@@ -30,8 +30,8 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 
 vim.keymap.set("n", "<leader>tq", "<cmd>TodoQuickFix<CR>", { desc = "Open [T]odo [Q]uickfix list" })
 
-vim.keymap.set("n", "<leader>fa", "<cmd>Telescope ast_grep<CR>", { desc = "[S]earch [a]st_grep" })
+vim.keymap.set("n", "<leader>sa", "<cmd>Telescope ast_grep<CR>", { desc = "[S]earch [a]st_grep" })
 
 -- Undotree
 vim.cmd("packadd nvim.undotree")
-vim.keymap.set("n", "<leader>u", require("undotree").open)
+vim.keymap.set("n", "<leader>u", require("undotree").open, { desc = "Toggle [U]ndotree UI" })
